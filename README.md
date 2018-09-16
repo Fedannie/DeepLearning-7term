@@ -14,3 +14,10 @@ Implement different optimization methods wihout using autograd or torch.optim. Y
 - Use FashionMNIST dataset https://github.com/zalandoresearch/fashion-mnist
 - Make sure you can fix random seed for all components of your code to make experiments reproducible
 - Since you architecure should be fully-convolutional, make sure it does not depend on input size.
+
+# Dependencies:
+- jupyter notebook
+- numpy
+- pytorch, torchvision
+- tensorboardX
+- matplotlib
