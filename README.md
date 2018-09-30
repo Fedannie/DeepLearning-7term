@@ -1,23 +1,16 @@
-# First assignment
-## Task 1:
-Implement different optimization methods wihout using autograd or torch.optim. You are only allowed to use pytorch as yur numeric computation framework. The only exception is visualize function.
+# Second assignment
 
-## Task 2:
-- Implement simple fully-convolutional neural architecture for classification. 
-- Make sure it is small enought to run on your home machine.
-- Provide dataset visulization.
-- Provide train/test split and validation
-#### Requirements:
-- Architecture should derive from torch.nn.Module
-- Use torch.utils.data.Dataset and torch.utils.data.DataLoader. But if you manage co simplify this step using dataset torchivision, I will only encourage you.
-- Implement at least one data transformer, but make sure it is useful for classification task.
-- Use FashionMNIST dataset https://github.com/zalandoresearch/fashion-mnist
-- Make sure you can fix random seed for all components of your code to make experiments reproducible
-- Since you architecure should be fully-convolutional, make sure it does not depend on input size.
+## Task: Implement ResNext
+Since we still didn't settle with computational power I'll try to dedicate this homework mostly to code style practies in designing neural networks and doing so particulary in pytorch.
 
-# Dependencies:
-- jupyter notebook
-- numpy
-- pytorch, torchvision
-- tensorboardX
-- matplotlib
+## Requirements:
+
+- NO JUPYTER! Homework should be a valid pip package. See https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/quickstart.html, steps 1-3
+- Add at least one test using forward pass with random data You can find this useful https://docs.pytest.org/en/latest/
+- Architecure should be similar to torchvision/models/resnet.py You are basically asked to replace ResNet residual block with the block of your own
+- I suggest inplementing Trainer class, being able to train network regardless of the architecure
+- Trainer should provide loss logging into tensorboardX
+- No stdout, only logging
+- Model should be able to load from the pretrained weights
+- For architecture reference visit https://arxiv.org/abs/1611.05431
+- I'm okay with you searching on the github for source code examples and best practices, but I sure will notice lazy copy-paste :)
