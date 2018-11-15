@@ -7,8 +7,8 @@ import torchvision.datasets as datasets
 from torch.optim import Adam
 from torchvision import transforms
 
-from homework.dcgan import DCGenerator, DCDiscriminator
-from homework.trainer import DCGANTrainer
+from dcgan import DCGenerator, DCDiscriminator
+from trainer import DCGANTrainer
 
 
 def get_config():
